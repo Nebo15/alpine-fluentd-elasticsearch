@@ -13,6 +13,7 @@ ENV PATH /home/fluent/.gem/ruby/2.3.0/bin:$PATH
 RUN apk --no-cache --update add sudo build-base ruby-dev && \
     sudo -u fluent gem install fluent-plugin-elasticsearch \
                                fluent-plugin-record-reformer \
+                               fluent-plugin-rewrite-tag-filter \
                                fluent-plugin-kubernetes \
                                fluent-plugin-kubernetes_metadata_filter \
                                fluent-plugin-docker-format \
